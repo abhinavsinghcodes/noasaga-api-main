@@ -1,7 +1,9 @@
 {
     "anime_list": {
       "The apothecary diaries": {
+        "anime_id": "67898",
         "Season 1": {
+        "season_id": "s1",
           "Episode 1": {
             "ep_name": "Episode 1",
             "ep_number": "1",
@@ -436,6 +438,7 @@
           }
         },
         "Season 2": {
+            "season_id": "s2",
           "Episode 1": {
             "ep_name": "Episode 1",
             "ep_number": "1",
@@ -547,7 +550,9 @@
         }
       },
       "Solo Levelling": {
+        "anime_id": "67899",
         "Season 1": {
+            "season_id": "s1",
           "Episode 1": {
             "ep_name": "Episode 1",
             "ep_number": "1",
@@ -781,6 +786,7 @@
           }
         },
         "Season 2": {
+            "season_id": "s2",
           "Episode 1": {
             "ep_name": "Episode 1",
             "ep_number": "1",

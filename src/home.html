@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noasaga API</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <header>
+        <h1>📌 Noasaga API</h1>
+        <p>A free anime API to fetch anime episodes, seasons, and more.</p>
+    </header>
+
+    <section>
+        <h2>📌 Base URL</h2>
+        <code>https://noasaga-api-main.onrender.com</code>
+    </section>
+
+    <section>
+        <h2>📜 Endpoints</h2>
+
+        <h3>🔹 Get All Anime Data</h3>
+        <p><strong>Endpoint:</strong> <code>GET /anime/data</code></p>
+
+        <h3>🔹 Get Anime by ID</h3>
+        <p><strong>Endpoint:</strong> <code>GET /anime/:anime_id</code></p>
+        <p><strong>Example:</strong> <code>GET /anime/67898</code></p>
+
+        <h3>🔹 Get Specific Season</h3>
+        <p><strong>Endpoint:</strong> <code>GET /anime/:anime_id/:season_id</code></p>
+        <p><strong>Example:</strong> <code>GET /anime/67898/s1</code></p>
+
+        <h3>🔹 Get Specific Episode</h3>
+        <p><strong>Endpoint:</strong> <code>GET /anime/:anime_id/:season_id/:episode_number</code></p>
+        <p><strong>Example:</strong> <code>GET /anime/67898/s1/1</code></p>
+    </section>
+
+    <section>
+        <h2>📌 How to Use</h2>
+        <ul>
+            <li>Use <code>GET /anime/data</code> to fetch all anime data.</li>
+            <li>Use <code>GET /anime/:anime_id</code> to fetch a specific anime.</li>
+            <li>Use <code>GET /anime/:anime_id/:season_id</code> to fetch a specific season.</li>
+            <li>Use <code>GET /anime/:anime_id/:season_id/:episode_number</code> to fetch a specific episode.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>⭐ Made with ❤️ by Noasaga API Team</p>
+    </footer>
+
+</body>
+</html>
