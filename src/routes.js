@@ -10,15 +10,17 @@ router.get("/data", (req, res) => {
 });
 
 // Endpoint to get anime by name
-router.get("/:name", (req, res) => {
-    const animeName = req.params.name.toLowerCase();
-    const anime = getAnimeByName(animeName);
-    
+router.get("/anime/:name", (req, res) => {
+    let animeName = req.params.name.replace(/[-_]/g, " "); // Convert hyphens/underscores to spaces
+
+    let anime = data.find(a => a.name.toLowerCase() === animeName.toLowerCase());
+
     if (anime) {
         res.json(anime);
     } else {
         res.status(404).json({ error: "Anime not found" });
     }
 });
+
 
 module.exports = router;
