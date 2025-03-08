@@ -582,6 +582,24 @@
               "file_url": "https://www.mediafire.com/file/q7wwxk3zk2hg93r/1080p_%255B102.57_MB%255D/file"
             }
           }
+        },
+        "Episode 9": {
+          "ep_name": "Episode 9",
+          "ep_number": "9",
+          "qualities": {
+            "360p": {
+              "file_size": "33.5 MB",
+              "file_url": "https://www.mediafire.com/file/c0alf3ohzdvgxoa/360p_%255B33.5_MB%255D.mp4/file"
+            },
+            "720p": {
+              "file_size": "66.5 MB",
+              "file_url": "https://www.mediafire.com/file/l84vqokrifk6ipa/720p_%255B66.5_MB%255D.mkv/file"
+            },
+            "1080p": {
+              "file_size": "108 MB",
+              "file_url": "https://www.mediafire.com/file/5uwqp7jsptwbw4v/1080p_%255B108_MB%255D.mkv/file"
+            }
+          }
         }
       }
     },
