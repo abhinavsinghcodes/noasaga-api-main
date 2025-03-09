@@ -1703,6 +1703,30 @@
           }
         }
       }
+    },
+    "Princess Mononoke": {
+      "anime_id": "67902",
+      "Season 1": {
+        "season_id": "s1",
+        "Episode 1": {
+          "ep_name": "Episode 1",
+          "ep_number": "1",
+          "qualities": {
+            "360p": {
+              "file_url": "N/A",
+              "file_size": "N/A MB"
+            },
+            "720p": {
+              "file_url": "N/A",
+              "file_size": "N/A"
+            },
+            "1080p": {
+              "file_url": "https://drive.google.com/file/d/1AJr5fefFEPsu5YDJ2_AMI73OJFForULt/view?usp=sharing",
+              "file_size": "1.23 GB"
+            }
+          }
+        }
+      }
     }
   }
 }
