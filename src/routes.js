@@ -42,11 +42,11 @@ router.get("/anime/:animeId/:seasonId", (req, res) => {
             for (const seasonName in anime) {
                 const season = anime[seasonName];
 
-                if (season.season_id === seasonId) {
+                if (typeof season === "object" && season.season_id === seasonId) {
                     foundSeason = {
                         anime_name: animeName,
                         season_name: seasonName,
-                        ...season
+                        episodes: season.episodes || {}
                     };
                     break;
                 }
@@ -73,14 +73,16 @@ router.get("/anime/:animeId/:seasonId/:episodeNumber", (req, res) => {
             for (const seasonName in anime) {
                 const season = anime[seasonName];
 
-                if (season.season_id === seasonId) {
-                    for (const episodeName in season) {
-                        if (season[episodeName].ep_number === episodeNumber) {
+                if (typeof season === "object" && season.season_id === seasonId && season.episodes) {
+                    for (const episodeName in season.episodes) {
+                        const episode = season.episodes[episodeName];
+
+                        if (episode.ep_number === episodeNumber) {
                             foundEpisode = {
                                 anime_name: animeName,
                                 season_name: seasonName,
                                 episode_name: episodeName,
-                                ...season[episodeName]
+                                ...episode
                             };
                             break;
                         }
